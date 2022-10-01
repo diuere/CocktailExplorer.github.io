@@ -1,0 +1,30 @@
+// color
+$clr-primary-1: #49a6e9;
+$clr-primary-2: #6ebef7;
+$clr-primary-3: #ebf7ff;
+$clr-primary-4: #f1f5f8;
+$clr-grey-1: #102a42;
+$clr-grey-1-5: rgba(16, 42, 66, 0.6);
+$clr-grey-2: #829ab0;
+$clr-red-dark: #bb2525;
+
+// background for the sections
+$heroBackground: "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all";
+$main-backgroundColor: rgb(232, 234, 238);
+$productSec-backgroundColor:rgb(225, 228, 248);
+$aboutSec-backgroundColor: rgb(236, 238, 250);
+$review-backgroundColor: rgb(225, 228, 248);
+$contactSec-backgroundColor: rgb(236, 238, 250);
+
+
+$mainBorderRadius: 0.25rem;
+
+
+$main-transition: all 0.3s linear;
+
+
+// breakpoints for the media query
+$breakpoints: (
+    "md": 678px,
+    "la": 968px,
+);

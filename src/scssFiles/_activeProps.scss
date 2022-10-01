@@ -1,0 +1,23 @@
+.scrolled{
+    position: fixed;
+    background-color: #f1f5f8;
+    border-bottom: .4rem solid #49a6e9;
+
+    .logo{
+        color: $clr-grey-1;
+    }
+
+    .menu-link{
+        color: $clr-grey-1;;
+
+        &::after{
+            background-color: $clr-grey-1;
+        }
+    }
+
+    .open-hamburger-menu{
+        color: $clr-grey-1;
+    }
+}
+
+

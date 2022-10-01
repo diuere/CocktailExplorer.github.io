@@ -1,0 +1,10 @@
+@mixin md { // median media query
+    @media all and (min-width: map-get($breakpoints, "md")){
+        @content;
+    }
+}
+@mixin la { // large media query
+    @media all and (min-width: map-get($breakpoints, "la")){
+        @content;
+    }
+}

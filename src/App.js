@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
+// contexts
+import { ScrollToTopContext } from './context/createContext';
+
+// components
+import CocktailComponent from './pages/CocktailComponent';
+import ProductsComponent from './pages/ProductsComponent';
+import Products from './components/Products';
+import Error from './pages/Error';
+import Home from './pages/Home';
+
+
+// React App
 function App() {
+  const queryClient = new QueryClient();
+  
+  const scrollToTop = () => window.scrollTo(0, 0);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <div className="App">
+          <ScrollToTopContext.Provider value={ { scrollToTop } }>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/productsComponent" element={<ProductsComponent />}>
+                <Route path="products" element={<Products />} />
+                <Route path="cocktailComponent/:productId" element={<CocktailComponent />} />
+                <Route path="*" element={<Error />}/>
+              </Route>
+              <Route path="/*" element={<Error />}/>
+            </Routes>
+          </ScrollToTopContext.Provider>
+        </div>
+        <ReactQueryDevtools initialIsOpen={false} position="bottom-left"/>
+      </QueryClientProvider>
+    </BrowserRouter>
   );
 }
 
