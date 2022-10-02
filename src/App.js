@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 // contexts
 import { ScrollToTopContext } from './context/createContext';
@@ -37,7 +37,6 @@ function App() {
             </Routes>
           </ScrollToTopContext.Provider>
         </div>
-        <ReactQueryDevtools initialIsOpen={false} position="bottom-left"/>
       </QueryClientProvider>
     </BrowserRouter>
   );
