@@ -20,8 +20,6 @@ export default function ProductsComponent() {
   const [searchTerm, setSearchTerm] = useState(""); // state for the search term input, mostly used for searching cocktails
   const [cocktailId, setCocktailId] = useState(""); // state that will store the cocktail's id was one gets clicked/selected 
 
-  console.log(searchTerm);
-
   const fetchCocktails = async (search) => {
     const response = await fetch(`${cocktailUrl}${search}`);
     const data = await response.json();

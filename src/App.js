@@ -14,7 +14,6 @@ import Products from './components/Products';
 import Error from './pages/Error';
 import Home from './pages/Home';
 
-
 // React App
 function App() {
   const queryClient = new QueryClient();

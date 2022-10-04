@@ -41,7 +41,6 @@ export default function JobCareer() {
         }
     }
 
-
     // the useEffect will be used to update the switch button based on the current object selection.
     useEffect(() => {    
         setPersonCareerSelector(prevState => prevState.map((person, i) => {
