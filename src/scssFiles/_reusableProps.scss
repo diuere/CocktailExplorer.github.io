@@ -26,7 +26,7 @@
     border-radius: $mainBorderRadius;
     background-color: $clr-primary-1;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: calc(var(--normal-font-size) * .8);
     font-weight: 600;
     color: $clr-primary-3;
     cursor: pointer;
@@ -42,12 +42,7 @@
 .main-title-style{
     display: inline-block;
     position: relative;
-    font-size: 2rem;
-    
-    @include la {
-        font-size: 2.5rem;
-        
-    }
+    font-size: calc(var(--h2-font-size));
 
     &::after{
         content: "";

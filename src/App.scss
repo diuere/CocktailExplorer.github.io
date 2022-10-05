@@ -36,15 +36,11 @@
     }
 }
 .logo{
-    font-size: 1.5rem;
+    font-size: calc(var(--big-font-size));
     color: #ffffff;
 
     span{
         color: $clr-primary-1;
-    }
-    
-    @include la{
-        font-size: 2rem;
     }
 }
 .open-hamburger-menu{
@@ -258,7 +254,7 @@
         position: relative;
         color: black;
         text-transform: uppercase;
-        font-size: calc(var(--big-font-size));
+        font-size: calc(var(--normal-font-size));
         letter-spacing: .1rem;
         transition: $main-transition;
         
@@ -337,10 +333,11 @@
         padding: 2rem;
     }
     
-    p{
-        font-size: calc(var(--normal-font-size));
+    h2{
+        font-size: calc(var(--h2-font-size));
     }
-    a{
+
+    p{
         font-size: calc(var(--normal-font-size));
     }
 
@@ -350,7 +347,6 @@
 
             h2{
                 margin-bottom: 1.5rem;
-                font-size: 2rem;
             }
             p{
                 margin-bottom: 1.5rem;
@@ -387,7 +383,7 @@
             width: 60%;
             background-color: $clr-primary-2;
             text-transform: uppercase;
-            font-size: calc(var(--normal-font-size));
+            font-size: calc(var(--normal-font-size) * .8);
             font-weight: 700;
             color: $clr-primary-3;
             letter-spacing: .1rem;
@@ -439,7 +435,7 @@
     position: relative;
     border: none;
     background-color: transparent;
-    font-size: calc(var(--big-font-size));
+    font-size: calc(var(--big-font-size) * .9);
     text-transform: uppercase;
     cursor: pointer;
     transition: $main-transition;
@@ -580,16 +576,18 @@
     // styles for the person information
     .person-name{
         margin-bottom: .5rem;
+        font-size: calc(var(--normal-font-size) * .9);
     }
     .person-occupation{
         margin-bottom: .5rem;
         color: $clr-primary-1;
         text-transform: uppercase;
-        font-size: calc(var(--small-font-size));
+        font-size: calc(var(--normal-font-size) * .9);
     }
     .person-description{
         margin-bottom: .875rem;
         color: $clr-grey-2;
+        font-size: calc(var(--small-font-size));
     }
 
     // style for the swap review arrows
@@ -617,6 +615,7 @@
         border: none;
         border-radius: $mainBorderRadius;
         background-color: $clr-primary-3;
+        font-size: calc(var(--small-font-size));
         color: $clr-primary-1;
         transition: $main-transition;
         cursor: pointer;
@@ -757,7 +756,7 @@
         border-radius: .6rem;
         background-color: $clr-primary-1;
         text-transform: uppercase;
-        font-size: calc(var(--normal-font-size));
+        font-size: calc(var(--normal-font-size) * .8);
         font-weight: 600;
         color: $clr-primary-4;
         letter-spacing: .1rem;
@@ -879,12 +878,6 @@
         font-size: calc(var(--h2-font-size));
         letter-spacing: .2rem;
     }
-
-    @include la{
-        .our-products-title{
-            font-size: 2.6rem;
-        }
-    }
 }
 
 
@@ -975,7 +968,7 @@
         margin-bottom: .8rem;
         color: $clr-grey-2;
         text-transform: capitalize;
-        font-size: .9rem;
+        font-size: calc(var(--small-font-size));
     }
     a{
         padding: .4rem .6rem;
@@ -1007,7 +1000,7 @@
     bottom: -10%;
     width: 2rem;
     height: 2rem;
-    font-size: 2rem;
+    font-size: calc(var(--big-font-size) * 1.5);
     transition: $main-transition;
     
     a{
@@ -1043,7 +1036,7 @@
         position: relative;
         padding: .5rem 0 ;
         text-transform: uppercase;
-        font-size: .9rem;
+        font-size: calc(var(--small-font-size));
         letter-spacing: .1rem;
 
         &::after{
@@ -1105,12 +1098,10 @@
     }
     div{
         flex-grow: 2;
+        font-size: calc(var(--small-font-size) * 1.2);
         margin: auto 0;
     }
     @include la{
-        div{
-            font-size: 1.2rem;
-        }
         .sm-contact-wrapper{
             margin: 1.8rem .5rem 0;
         }
@@ -1142,7 +1133,7 @@
 
         h1{
             margin-bottom: 2rem;
-            font-size: 2rem;
+            font-size: calc(var(--h2-font-size));
             letter-spacing: .1rem;
         }
     }

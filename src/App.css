@@ -109,7 +109,7 @@ a {
   border-radius: 0.25rem;
   background-color: #49a6e9;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: calc(var(--normal-font-size) * 0.8);
   font-weight: 600;
   color: #ebf7ff;
   cursor: pointer;
@@ -122,12 +122,7 @@ a {
 .main-title-style {
   display: inline-block;
   position: relative;
-  font-size: 2rem;
-}
-@media all and (min-width: 968px) {
-  .main-title-style {
-    font-size: 2.5rem;
-  }
+  font-size: calc(var(--h2-font-size));
 }
 .main-title-style::after {
   content: "";
@@ -211,16 +206,11 @@ a {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: calc(var(--big-font-size));
   color: #ffffff;
 }
 .logo span {
   color: #49a6e9;
-}
-@media all and (min-width: 968px) {
-  .logo {
-    font-size: 2rem;
-  }
 }
 
 .open-hamburger-menu {
@@ -393,7 +383,7 @@ a {
   position: relative;
   color: black;
   text-transform: uppercase;
-  font-size: calc(var(--big-font-size));
+  font-size: calc(var(--normal-font-size));
   letter-spacing: 0.1rem;
   transition: all 0.3s linear;
 }
@@ -464,16 +454,15 @@ a {
   gap: 2rem;
   padding: 2rem;
 }
-.products-sec p {
-  font-size: calc(var(--normal-font-size));
+.products-sec h2 {
+  font-size: calc(var(--h2-font-size));
 }
-.products-sec a {
+.products-sec p {
   font-size: calc(var(--normal-font-size));
 }
 @media all and (min-width: 678px) {
   .products-sec .container h2 {
     margin-bottom: 1.5rem;
-    font-size: 2rem;
   }
   .products-sec .container p {
     margin-bottom: 1.5rem;
@@ -505,7 +494,7 @@ a {
   width: 60%;
   background-color: #6ebef7;
   text-transform: uppercase;
-  font-size: calc(var(--normal-font-size));
+  font-size: calc(var(--normal-font-size) * 0.8);
   font-weight: 700;
   color: #ebf7ff;
   letter-spacing: 0.1rem;
@@ -553,7 +542,7 @@ a {
   position: relative;
   border: none;
   background-color: transparent;
-  font-size: calc(var(--big-font-size));
+  font-size: calc(var(--big-font-size) * 0.9);
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s linear;
@@ -680,16 +669,18 @@ a {
 }
 .review-wrapper .person-name {
   margin-bottom: 0.5rem;
+  font-size: calc(var(--normal-font-size) * 0.9);
 }
 .review-wrapper .person-occupation {
   margin-bottom: 0.5rem;
   color: #49a6e9;
   text-transform: uppercase;
-  font-size: calc(var(--small-font-size));
+  font-size: calc(var(--normal-font-size) * 0.9);
 }
 .review-wrapper .person-description {
   margin-bottom: 0.875rem;
   color: #829ab0;
+  font-size: calc(var(--small-font-size));
 }
 .review-wrapper .switch-review-wrapper button {
   margin: 0 0.5rem;
@@ -710,6 +701,7 @@ a {
   border: none;
   border-radius: 0.25rem;
   background-color: #ebf7ff;
+  font-size: calc(var(--small-font-size));
   color: #49a6e9;
   transition: all 0.3s linear;
   cursor: pointer;
@@ -836,7 +828,7 @@ a {
   border-radius: 0.6rem;
   background-color: #49a6e9;
   text-transform: uppercase;
-  font-size: calc(var(--normal-font-size));
+  font-size: calc(var(--normal-font-size) * 0.8);
   font-weight: 600;
   color: #f1f5f8;
   letter-spacing: 0.1rem;
@@ -940,11 +932,6 @@ a {
   font-size: calc(var(--h2-font-size));
   letter-spacing: 0.2rem;
 }
-@media all and (min-width: 968px) {
-  .our-products-page .our-products-title {
-    font-size: 2.6rem;
-  }
-}
 
 .search-term-section {
   display: flex;
@@ -1032,7 +1019,7 @@ a {
   margin-bottom: 0.8rem;
   color: #829ab0;
   text-transform: capitalize;
-  font-size: 0.9rem;
+  font-size: calc(var(--small-font-size));
 }
 .cocktail-content-wrapper a {
   padding: 0.4rem 0.6rem;
@@ -1061,7 +1048,7 @@ a {
   bottom: -10%;
   width: 2rem;
   height: 2rem;
-  font-size: 2rem;
+  font-size: calc(var(--big-font-size) * 1.5);
   transition: all 0.3s linear;
 }
 .rollback-wrapper a {
@@ -1095,7 +1082,7 @@ a {
   position: relative;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: calc(var(--small-font-size));
   letter-spacing: 0.1rem;
 }
 .footer-info-wrapper h4::after {
@@ -1149,12 +1136,10 @@ a {
 }
 .abt-footer-wrapper div, .address-footer-wrapper div {
   flex-grow: 2;
+  font-size: calc(var(--small-font-size) * 1.2);
   margin: auto 0;
 }
 @media all and (min-width: 968px) {
-  .abt-footer-wrapper div, .address-footer-wrapper div {
-    font-size: 1.2rem;
-  }
   .abt-footer-wrapper .sm-contact-wrapper, .address-footer-wrapper .sm-contact-wrapper {
     margin: 1.8rem 0.5rem 0;
   }
@@ -1181,6 +1166,6 @@ a {
 }
 .error-sec .error h1 {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: calc(var(--h2-font-size));
   letter-spacing: 0.1rem;
 }/*# sourceMappingURL=App.css.map */
