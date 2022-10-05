@@ -1,3 +1,29 @@
+:root {
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --big-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+}
+@media all and (min-width: 678px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --big-font-size: 1.5rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: .913rem;
+  }
+}
+@media all and (min-width: 968px) {
+  :root {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --big-font-size: 1.75rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1rem;
+  }
+}
+
 *, :after, :before {
   margin: 0;
   padding: 0;
@@ -223,7 +249,7 @@ a {
   }
   .desktop-links-wrapper .desktop-menu-links .menu-link {
     position: relative;
-    font-size: 1.5rem;
+    font-size: calc(var(--normal-font-size));
     transition: all 0.3s linear;
   }
   .desktop-links-wrapper .desktop-menu-links .menu-link .link-icon {
@@ -262,7 +288,7 @@ a {
   display: flex;
   align-items: center;
   justify-self: end;
-  font-size: 1.8rem;
+  font-size: calc(var(--h1-font-size));
   cursor: pointer;
 }
 .hamburger-menu-wrapper .overlay {
@@ -291,6 +317,7 @@ a {
   height: 100vh;
   min-width: 16rem;
   transition: all 0.3s linear;
+  transform: translate(-16rem);
 }
 .hamburger-links-wrapper ul {
   list-style: none;
@@ -308,7 +335,7 @@ a {
 .hamburger-links-wrapper .menu-header .close-hamburger-menu {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: calc(var(--h1-font-size));
   color: #bb2525;
   cursor: pointer;
 }
@@ -323,7 +350,7 @@ a {
   align-items: center;
   text-transform: capitalize;
   padding: 0.8rem 1rem;
-  font-size: 1.3rem;
+  font-size: calc(var(--big-font-size));
   color: #102a42;
 }
 .hamburger-links-wrapper .hamburger-menu-links .menu-link .link-icon {
@@ -331,7 +358,7 @@ a {
 }
 .hamburger-links-wrapper .sm-contact-wrapper {
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: calc(var(--big-font-size));
 }
 .hamburger-links-wrapper .sm-contact-wrapper li {
   margin-right: 1rem;
@@ -348,7 +375,7 @@ a {
   list-style: none;
   display: flex;
   justify-self: center;
-  font-size: 1rem;
+  font-size: calc(var(--normal-font-size) * 0.9);
 }
 .sm-contact-wrapper li {
   margin-right: 1rem;
@@ -366,7 +393,7 @@ a {
   position: relative;
   color: black;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: calc(var(--big-font-size));
   letter-spacing: 0.1rem;
   transition: all 0.3s linear;
 }

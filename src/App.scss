@@ -75,7 +75,7 @@
             
             .menu-link{
                 position: relative;
-                font-size: 1.5rem;
+                font-size: calc(var(--normal-font-size));
                 transition: $main-transition;
                 
                 .link-icon{
@@ -126,7 +126,7 @@
         display: flex;
         align-items: center;
         justify-self: end;
-        font-size: 1.8rem;
+        font-size: calc(var(--h1-font-size));
         cursor: pointer;
     }
     
@@ -180,7 +180,7 @@
         .close-hamburger-menu{
             display: flex;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: calc(var(--h1-font-size));
             color: $clr-red-dark;
             cursor: pointer;
         }
@@ -201,7 +201,7 @@
             align-items: center;
             text-transform: capitalize;
             padding: .8rem 1rem;
-            font-size: 1.3rem;
+            font-size: calc(var(--big-font-size));
             color: $clr-grey-1;
             
             .link-icon{
@@ -213,7 +213,7 @@
     // styles for the social media icons/links
     .sm-contact-wrapper{
         margin-bottom: 2rem;
-        font-size: 1.5rem;
+        font-size: calc(var(--big-font-size));
         
         li{
             margin-right: 1rem;
@@ -235,7 +235,7 @@
     list-style: none;
     display: flex;
     justify-self: center;
-    font-size: 1rem;
+    font-size: calc(var(--normal-font-size) * .9);
     
     li{
         margin-right: 1rem;
@@ -258,7 +258,7 @@
         position: relative;
         color: black;
         text-transform: uppercase;
-        font-size: 1.3rem;
+        font-size: calc(var(--big-font-size));
         letter-spacing: .1rem;
         transition: $main-transition;
         
