@@ -69,11 +69,6 @@ header {
   background-color: transparent;
   z-index: 99;
 }
-@media all and (min-width: 968px) {
-  header a {
-    font-size: 2rem;
-  }
-}
 
 main {
   scroll-behavior: smooth;
@@ -1097,7 +1092,7 @@ a {
 }
 
 .abt-footer-wrapper .sm-contact-wrapper {
-  margin: 1rem 0.5rem 0;
+  margin: 1rem 0 0;
 }
 .abt-footer-wrapper .sm-contact-wrapper a:hover {
   color: #6ebef7;

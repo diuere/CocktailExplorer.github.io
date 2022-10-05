@@ -427,7 +427,6 @@
     
         &::after{
             opacity: 1;
-            
         }
     }
 }
@@ -691,6 +690,7 @@
 }
 .googleMap-iframe-wrapper{
     min-height: 50vh;
+
     iframe{
         border: none;
         width: 100%;
@@ -717,7 +717,6 @@
             margin: 0 .5rem;
             background-color: $clr-primary-1;
             width: 2.5rem;
-            
         }
     
         .loading-1{
@@ -902,7 +901,6 @@
     }
     @include la{
         padding: 1.5rem 2rem;
-
     }
 
     label{
@@ -1055,7 +1053,7 @@
 
 .abt-footer-wrapper{
     .sm-contact-wrapper{
-        margin: 1rem .5rem 0;
+        margin: 1rem 0 0;
 
         a:hover{
             color: $clr-primary-2;
