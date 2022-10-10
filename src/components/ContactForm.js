@@ -7,7 +7,8 @@ export default function ContactForm() {
     const sendEmail = (e) => { // sending emails using EmailJS
       e.preventDefault();
   
-      emailjs.sendForm('service_7mfuzbo', 'template_ob9k3p8', form.current, 'OjtO9_H9y03jj1H36')
+      // emailjs.sendForm('service_7mfuzbo', 'template_ob9k3p8', form.current, 'OjtO9_H9y03jj1H36')
+      emailjs.sendForm('service_e8tjba3', 'template_bhovy0m', form.current, 'J-tFMwV5sJF45Q8em')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -23,7 +24,7 @@ export default function ContactForm() {
         <input type="text" name="from_name" id="userName" required/>
 
         <label htmlFor="userEmail">Email</label>
-        <input type="email" name="email_id"  id="userEmail" required/>
+        <input type="email" name="from_email"  id="userEmail" required/>
         
         <label htmlFor="contactMessage">Message</label>
         <textarea name="message" id="contactMessage" cols="30" rows="10" required></textarea>
