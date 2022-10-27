@@ -81,6 +81,7 @@ a {
 .container {
   margin: auto;
   width: 90%;
+  height: 100%;
 }
 @media all and (min-width: 968px) {
   .container {
@@ -90,6 +91,10 @@ a {
 
 .section {
   padding: 4rem 0;
+  min-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   scroll-snap-align: center;
 }
 @media all and (min-width: 968px) {
