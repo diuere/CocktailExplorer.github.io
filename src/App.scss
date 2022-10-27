@@ -323,6 +323,8 @@
 
 
 .products-sec{
+    display: flex;
+    align-items: center;
     background-color: $productSec-backgroundColor;
 
     .container{
@@ -360,6 +362,7 @@
     @include la{
         .container{
             grid-template-columns: repeat(2, 25rem);
+            gap: 5rem;
         }
     }
     

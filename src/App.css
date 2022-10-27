@@ -445,6 +445,8 @@ a {
 }
 
 .products-sec {
+  display: flex;
+  align-items: center;
   background-color: rgb(225, 228, 248);
 }
 .products-sec .container {
@@ -474,6 +476,7 @@ a {
 @media all and (min-width: 968px) {
   .products-sec .container {
     grid-template-columns: repeat(2, 25rem);
+    gap: 5rem;
   }
 }
 
