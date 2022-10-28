@@ -787,47 +787,26 @@
 .cocktail-component{
     display: flex;
     justify-content: center;
-    padding: 6rem 2rem 5rem;
+    align-items: center;
+    padding: 8rem 2rem 5rem;
     background-color: $main-backgroundColor;
+    min-height: 100vh;
 }
+
 .cocktail-container{
-    display: grid;
-    grid-column-gap: 2.5rem;
-    max-width: 60rem;
-
-    .goBack-btn{
-        margin: auto;
-    }
-
-    @include md{
-        grid-template-areas: 
-            "btn btn"
-            "nm nm"
-            "img txt"
-        ;
-
-        .goBack-btn{
-            grid-area: btn;
-            justify-self: center;
-        }
-        h2{
-            grid-area: nm;
-
-        }
-        .cocktailComponent-img-wrapper{
-            grid-area: img;
-        }
-        .cocktail-info{
-            grid-area: txt;
-            
-        }
+    max-width: 80rem;
+    width: 100%;
+    
+    .goBack-btn-wrapper{
+        text-align: center;
     }
     
     .cocktailComponent-img-wrapper{
         display: flex;
         justify-content: center;
+        align-items: center;
+
         img{
-            margin-bottom: 2rem;
             border-radius: .6rem;
             width: 100%;
             max-width: 25rem;
@@ -835,33 +814,55 @@
     }
     
     h2{
-        justify-self: center;
-        margin: 1.5rem 0;
+        margin: 2.5rem 0;
         font-size: calc(var(--h2-font-size));
+        text-align: center;
         font-weight: 600;
         letter-spacing: .3rem;
     }     
+
+    @include la{
+        .cocktailComponent-img-wrapper{
+            img{
+                max-width: 25rem;
+            }
+        }
+    }
+}
+
+.cocktail-info-body{
+    display: grid;
+    align-content: center;
+    gap: 2.5rem;
+
+    @include md{
+        grid-template-columns: 40% auto;
+    }
 }
 
 .cocktail-info-wrapper{
-    align-self: center;
+    display: grid;
+    justify-content: center;
 
     .cocktail-info{
-        margin: .6rem 0;
+        margin: .3rem 0;
+        max-width: 25rem;
         font-size: calc(var(--normal-font-size));
         font-weight: 600;
-        line-height: 1.6rem;
-
+        line-height: 1.8rem;
+        
         .cocktail-spec{
             padding: .25rem .5rem;
             border-radius: $mainBorderRadius;
             background-color: $clr-primary-2;
         }
     }
-
+    
     @include la{
         .cocktail-info{
-            margin: 0 0 1.5rem;
+            margin: .6rem 0;
+            max-width: initial;
+            line-height: 2.2rem;
         }
     }
 }

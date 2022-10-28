@@ -87,42 +87,46 @@ export default function CocktailComponent() {
   return (
     <main className="cocktail-component">
         <div className="cocktail-container">
-            <Link to="/productsComponent/products" className="main-btn-style goBack-btn" aria-label="go back">go back</Link>
-            <h2>{cocktail.name}</h2>
-            <div className="cocktailComponent-img-wrapper">
-              <img src={cocktail.image} alt={cocktail.name} />
+            <div className="goBack-btn-wrapper">
+              <Link to="/productsComponent/products" className="main-btn-style goBack-btn" aria-label="go back">go back</Link>
             </div>
-            <div className="cocktail-info-wrapper">
-              <p className="cocktail-info">
-                <span className="cocktail-spec">
-                  Name:
-                </span> {cocktail.name}
-              </p>
-              <p className="cocktail-info">
-                <span className="cocktail-spec">
-                  Category:
-                </span> {cocktail.category}
-              </p>
-              <p className="cocktail-info">
-                <span className="cocktail-spec">
-                Info:
-                </span> {cocktail.info}
-              </p>
-              <p className="cocktail-info">
-                <span className="cocktail-spec">
-                Glass:
-                </span> {cocktail.glass}
-              </p>
-              <p className="cocktail-info">
-                <span className="cocktail-spec">
-                Instructions:
-                </span> {cocktail.instructions}
-              </p>
-              <p className="cocktail-info">
-                <span className="cocktail-spec">
-                Ingredients:
-                </span> <GetIngredients />
-              </p>
+            <h2>{cocktail.name}</h2>
+            <div className="cocktail-info-body">
+              <div className="cocktailComponent-img-wrapper">
+                <img src={cocktail.image} alt={cocktail.name} />
+              </div>
+              <div className="cocktail-info-wrapper">
+                <p className="cocktail-info">
+                  <span className="cocktail-spec">
+                    Name:
+                  </span> {cocktail.name}
+                </p>
+                <p className="cocktail-info">
+                  <span className="cocktail-spec">
+                    Category:
+                  </span> {cocktail.category}
+                </p>
+                <p className="cocktail-info">
+                  <span className="cocktail-spec">
+                  Info:
+                  </span> {cocktail.info}
+                </p>
+                <p className="cocktail-info">
+                  <span className="cocktail-spec">
+                  Glass:
+                  </span> {cocktail.glass}
+                </p>
+                <p className="cocktail-info">
+                  <span className="cocktail-spec">
+                  Instructions:
+                  </span> {cocktail.instructions}
+                </p>
+                <p className="cocktail-info">
+                  <span className="cocktail-spec">
+                  Ingredients:
+                  </span> <GetIngredients />
+                </p>
+              </div>
             </div>
         </div>
     </main>
