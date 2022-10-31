@@ -28,8 +28,8 @@ export default function HamburgerMenu() {
   useEffect(() => activateMenu(toggled), [toggled]);
   
   // functions that will trigger the menu open and close events
-  const openMenu = () => setToggled(prevState => !prevState);
-  const closeMenu = () => setToggled(prevState => !prevState);
+  const openMenu = () => setToggled(true);
+  const closeMenu = () => setToggled(false);
   
   return (
     <div className="hamburger-menu-wrapper">
@@ -37,6 +37,9 @@ export default function HamburgerMenu() {
         <GiHamburgerMenu/>
       </div>
       <div className="overlay">
+        <div className="blur" onClick={closeMenu}>
+
+        </div>
         <div className="hamburger-links-wrapper">
           <div className="menu-header">
             <a href="#welcome" className="logo">
