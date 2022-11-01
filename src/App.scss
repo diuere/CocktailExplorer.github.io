@@ -373,6 +373,10 @@
     }
     
 }
+.emphasizing{
+    animation: emphasize 1s ease-in-out;
+    animation-iteration-count: 3;
+}
 
 
 .about-sec  {
