@@ -261,7 +261,7 @@
     .homeBtn{
         position: relative;
         color: black;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-size: calc(var(--normal-font-size));
         letter-spacing: .1rem;
         transition: $main-transition;
@@ -902,10 +902,10 @@
 .search-term-form{
     display: grid;
     margin-bottom: 3rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: $mainBorderRadius;
     max-width: 40rem;
-    width: 70%;
+    width: 80%;
     background-color: #ffffff;
     font-size: calc(var(--normal-font-size));
     box-shadow: .3rem .3rem rgba(0,0,0,.5);
